@@ -8,12 +8,27 @@
 	<name>web03a Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
+	<repositories>
+		<repository>
+			<id>central</id>
+			<url>http://repo.maven.apache.org/maven2/</url>
+		</repository>
+		<repository>
+			<id>codehaus</id>
+			<url>http://repository.codehaus.org/org/codehaus</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
 			<version>2.1.8</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-dojo-plugin</artifactId>
+			<version>2.1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
@@ -37,6 +52,31 @@
 			<artifactId>struts2-spring-plugin</artifactId>
 			<version>2.1.8</version>
 		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<!-- <dependency> <groupId>org.codehaus.jackson</groupId> <artifactId>jackson-mapper-asl</artifactId> 
+			<version>1.8.5</version> </dependency> -->
+
+		<dependency>
+			<groupId>com.cedarsoftware</groupId>
+			<artifactId>java-util</artifactId>
+			<version>1.9.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.cedarsoftware</groupId>
+			<artifactId>json-io</artifactId>
+			<version>2.5.1</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>web03a</finalName>

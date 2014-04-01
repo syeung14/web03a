@@ -15,6 +15,12 @@
 		<action name="userSpringAction" class="userSpringAction">
 			<result name="success">pages/user.jsp</result>
 		</action>
-
+   		<action name="ajaxTags">
+            <result>/WEB-INF/pages/ajaxTags.jsp</result>
+        </action>
+        <action name="ajaxTagsAction" class="com.ssyeung.ajax.AjaxTags">
+        	<result name="success">/WEB-INF/pages/success.jsp</result>
+            <result name="failure">/WEB-INF/pages/ajaxTags.jsp</result>
+        </action>
 	</package>
 </struts>
