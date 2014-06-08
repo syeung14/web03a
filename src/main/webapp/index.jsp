@@ -24,7 +24,6 @@
 	
 	<%  JsonObject json = new JsonObject();
 	
-		
 	
 	%>
 	
